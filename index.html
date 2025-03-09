@@ -3,9 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Survey Form">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>HTML FORM PRACTICE</title>
 </head>
 <body>
+    <h1>Survey Form</h1>
+
+    <div class="container">
+
+        <p>Let us know how we can help you</p>
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" name="name" required placeholder="Enter your name">
     
+            <label for="email">Email:</label>
+            <input type="text" required placeholder="Enter your Email">
+    
+            <label for="age">Age:</label>
+            <select name="age" required> 
+                <option value="">Age</option>
+                <option value="18-25">18-25</option>
+                <option value="26-35">26-35</option>
+                <option value="36-45">36-45</option>
+                <option value="46-55">46-55</option>
+                <option value="56-65">56-65</option>
+                <option value="66+">66+</option>
+            </select>
+    
+            <label for="role">Which option best describes your current role?</label>
+            <select name="role" required> 
+                <option value=""></option>
+                <option value="student">Student</option>
+                <option value="full-time-job">Full-time job</option>
+                <option value="part-time-job">Part-time job</option>
+                <option value="freelancer">Freelancer</option>
+                <option value="unemployed">Unemployed</option>
+                <option value="other">Other</option>
+            </select>
+    
+            <label>How likely is it that you would recommend GSS to a friend?</label>
+            <div>
+                <input type="radio" id="yes" name="recommend" value="yes" required>
+                <label for="yes">Yes</label>
+            </div>
+            <div>
+                <input type="radio" id="no" name="recommend" value="no">
+                <label for="no">No</label>
+            </div>
+            <div>
+                <input type="radio" id="not-sure" name="recommend" value="not-sure">
+                <label for="not-sure">Not sure</label>
+            </div>
+            <div>
+                <input type="radio" id="maybe" name="recommend" value="maybe">
+                <label for="maybe">Maybe</label>
+            </div>
+    
+            <label for="role">What do you like most</label>
+            <select name="role" required> 
+                <option value=""> Student</option>
+                <option value="free-time">Flexibiity</option>
+                <option value="full-time-job">Full-time job</option>
+                <option value="part-time-job">Part-time job</option>
+                <option value="freelancer">Freelancer</option>
+                <option value="unemployed">Unemployed</option>
+                <option value="other">Other</option>
+            </select>
+    
+            <label>Skills you would love to improve on? (Check all that apply)</label>
+            <div>
+                <input type="radio" id="yes" name="recommend" value="yes" required>
+                <label for="yes">Back-end</label>
+            </div>
+            <div>
+                <input type="radio" id="no" name="recommend" value="no">
+                <label for="no">Front-end</label>
+            </div>
+            <div>
+                <input type="radio" id="not-sure" name="recommend" value="not-sure">
+                <label for="not-sure">Data Visualisation</label>
+            </div>
+            <div>
+                <input type="radio" id="maybe" name="recommend" value="maybe">
+                <label for="maybe">Python</label>
+            </div>
+            <div>
+                <input type="radio" id="maybe" name="recommend" value="maybe">
+                <label for="maybe">Dart</label>
+            </div>
+            <div>
+                <input type="radio" id="maybe" name="recommend" value="maybe">
+                <label for="maybe">PHP</label>
+            </div>
+            <div>
+                <input type="radio" id="maybe" name="recommend" value="maybe">
+                <label for="maybe">JAVA</label>
+            </div>
+    
+        </form>
+    </div>
+
+
+
 </body>
 </html>
